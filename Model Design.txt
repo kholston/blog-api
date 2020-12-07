@@ -1,0 +1,22 @@
+User Model
+  username: string
+  password: string(hashed)
+  name: string
+  accessLevel: string, enum[Viewer,Author]
+
+Post Model
+  title: string
+  byline: string
+  author: User model with Author accessLevel
+  body: string
+  publish: boolean
+  publishDate
+  dateCreated
+  dateUpdated
+
+Comment Model
+  author: User model
+  body: string
+  post: Post model
+  dateCreated
+  dateUpdated
