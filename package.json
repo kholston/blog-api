@@ -2,11 +2,14 @@
   "name": "blog-api",
   "version": "1.0.0",
   "description": "A blog api using express, passport and jsonwebtokens",
-  "main": "app.js",
   "repository": "https://github.com/kholston/blog-api",
   "author": "Ken Holston",
   "license": "MIT",
   "private": true,
+  "scripts":{
+    "start":"nodemon --exec babel-node src/app.js",
+    "devstart": "DEBUG=blog-api:* yarn run start"
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
